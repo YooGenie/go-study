@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/YooGenie/go-study/function"
+	"github.com/YooGenie/go-study/basic"
 )
 
 func main() {
@@ -25,5 +25,5 @@ func main() {
 	//function.SliceStringAndConvertInt()
 	//basic.Map()
 	//function.ListAndMap()
-	function.Join()
+	basic.Solution()
 }

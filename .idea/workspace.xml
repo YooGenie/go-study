@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10719b8c-f553-4197-945b-c526bbdbe5ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car/bus.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car/taix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/method.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1" />
+        <entry key="$PROJECT_DIR$" value="5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +58,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bsit\go\src\study\go-study" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bsit\go\src\study\go-study\car" />
+      <recent name="C:\Users\bsit\go\src\study\go-study\individual" />
+      <recent name="C:\Users\bsit\go\src\study\go-study\business" />
+      <recent name="C:\Users\bsit\go\src\study\go-study\interface" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/YooGenie/go-study">
     <configuration name="go build github.com/YooGenie/go-study" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -79,8 +88,8 @@
       <list>
         <item itemvalue="Go Build.go build github.com/YooGenie/go-study" />
         <item itemvalue="Go Build.go build study/go-study" />
-        <item itemvalue="Go Build.go build study/go-study" />
         <item itemvalue="Go Build.go build github.com/YooGenie/go-study" />
+        <item itemvalue="Go Build.go build study/go-study" />
         <item itemvalue="Go Build.go build study/go-study" />
       </list>
     </recent_temporary>

@@ -10,4 +10,6 @@ func main() {
 	SetStruct()
 	fmt.Println("")
 	EmbeddedField()
+	Interface()
+
 }

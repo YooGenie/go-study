@@ -4,10 +4,10 @@ package car
 import "fmt"
 
 type Bus struct {
-
+	Charge int
 }
 
-func (t *Bus) Drive(destination string)  {
-	charge := 1250
-	fmt.Println(destination,"까지 버스요금은  ", charge, " 입니다.")
+func (b *Bus) Drive(destination string)  {
+	b.Charge = 1250
+	fmt.Println(destination,"까지 버스요금은  ", b.Charge, " 입니다.")
 }

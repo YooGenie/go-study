@@ -10,4 +10,6 @@ func main() {
 	SetStruct()
 	fmt.Println("")
 	EmbeddedField()
+	fmt.Println("")
+	StudyIf("red", 29)
 }

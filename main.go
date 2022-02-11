@@ -12,4 +12,5 @@ func main() {
 	EmbeddedField()
 	fmt.Println("")
 	StudyIf("red", 29)
+	StudySwitch("sunday",28)
 }

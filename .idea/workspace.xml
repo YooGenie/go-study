@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10719b8c-f553-4197-945b-c526bbdbe5ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/if.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/switch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1" />
+        <entry key="$PROJECT_DIR$" value="11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +48,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../study-service" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
@@ -79,8 +79,8 @@
       <list>
         <item itemvalue="Go Build.go build github.com/YooGenie/go-study" />
         <item itemvalue="Go Build.go build study/go-study" />
-        <item itemvalue="Go Build.go build study/go-study" />
         <item itemvalue="Go Build.go build github.com/YooGenie/go-study" />
+        <item itemvalue="Go Build.go build study/go-study" />
         <item itemvalue="Go Build.go build study/go-study" />
       </list>
     </recent_temporary>

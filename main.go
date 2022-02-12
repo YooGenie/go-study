@@ -13,4 +13,5 @@ func main() {
 	fmt.Println("")
 	StudyIf("red", 29)
 	StudySwitch("sunday",28)
+	StudyFor()
 }

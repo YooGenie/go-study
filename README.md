@@ -15,3 +15,6 @@ https://pink1016.tistory.com/95
 
 ## #15 for문 공부하기
 https://pink1016.tistory.com/96
+
+### #17 for range 공부하기
+https://pink1016.tistory.com/97

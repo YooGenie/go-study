@@ -1,17 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/YooGenie/go-study/basic"
+)
 
 func main() {
 	CompareIfWithSwitch(5)
 	fmt.Println("")
 	Trim("          유지니             ")
 	fmt.Println("")
-	SetStruct()
+	basic.SetStruct()
 	fmt.Println("")
-	EmbeddedField()
+	basic.EmbeddedField()
 	fmt.Println("")
-	StudyIf("red", 29)
-	StudySwitch("sunday",28)
-	StudyFor()
+	basic.StudyIf("red", 29)
+	basic.StudySwitch("sunday",28)
+	basic.StudyFor()
+	basic.StudyForRange()
 }

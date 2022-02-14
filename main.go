@@ -18,4 +18,5 @@ func main() {
 	basic.StudySwitch("sunday",28)
 	basic.StudyFor()
 	basic.StudyForRange()
+	basic.StudyArray()
 }

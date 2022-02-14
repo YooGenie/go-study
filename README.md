@@ -1,20 +1,23 @@
 # go-study
 알고리즘 공부 및 go 공부
 
-## #1 if문과 switch문 비교하기
+### #1 if문과 switch문 비교하기
 https://pink1016.tistory.com/91
 
-## #3 글자 양쪽 공백 제거하는 방법(trim)
+### #3 글자 양쪽 공백 제거하는 방법(trim)
 https://pink1016.tistory.com/92
 
-## #11 if문 공부하기
+### #11 if문 공부하기
 https://pink1016.tistory.com/94
 
-## #13 switch문 공부하기
+### #13 switch문 공부하기
 https://pink1016.tistory.com/95
 
-## #15 for문 공부하기
+### #15 for문 공부하기
 https://pink1016.tistory.com/96
 
 ### #17 for range 공부하기
 https://pink1016.tistory.com/97
+
+### #19 배열 공부하기
+https://pink1016.tistory.com/98

@@ -24,3 +24,7 @@ https://pink1016.tistory.com/97
 
 ### #19 배열 공부하기
 https://pink1016.tistory.com/98
+
+### #22 타입(type) 확인 하는 방법
+https://pink1016.tistory.com/100
+

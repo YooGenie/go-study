@@ -1,4 +1,4 @@
-package main
+package compare
 
 import (
 	"fmt"

@@ -3,12 +3,14 @@ package main
 import (
 	"fmt"
 	"github.com/YooGenie/go-study/basic"
+	"github.com/YooGenie/go-study/compare"
+	"github.com/YooGenie/go-study/function"
 )
 
 func main() {
-	CompareIfWithSwitch(5)
+	compare.CompareIfWithSwitch(5)
 	fmt.Println("")
-	Trim("          유지니             ")
+	function.Trim("          유지니             ")
 	fmt.Println("")
 	basic.SetStruct()
 	fmt.Println("")
@@ -19,4 +21,5 @@ func main() {
 	basic.StudyFor()
 	basic.StudyForRange()
 	basic.StudyArray()
+	function.CheckType()
 }

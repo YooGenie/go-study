@@ -22,4 +22,5 @@ func main() {
 	basic.StudyForRange()
 	basic.StudyArray()
 	function.CheckType()
+	basic.SliceStudy()
 }

@@ -23,4 +23,5 @@ func main() {
 	basic.StudyArray()
 	function.CheckType()
 	basic.SliceStudy()
+	function.FillZero(12365)
 }

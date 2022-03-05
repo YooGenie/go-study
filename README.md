@@ -34,3 +34,6 @@ https://pink1016.tistory.com/100
 ### #25 10자리이하 숫자를 입력하면 앞에 0을 채워서 10자리 수 만들기
 https://pink1016.tistory.com/103
 
+### #27 숫자 랜덤으로 생성하기
+https://pink1016.tistory.com/104
+

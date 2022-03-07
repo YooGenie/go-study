@@ -21,5 +21,6 @@ func main() {
 	//function.CheckType()
 	//basic.SliceStudy()
 	//function.FillZero(12365)
-	function.Random()
+	//function.Random()
+	function.SliceStringAndConvertInt()
 }

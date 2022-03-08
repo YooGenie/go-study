@@ -37,3 +37,6 @@ https://pink1016.tistory.com/103
 ### #27 숫자 랜덤으로 생성하기
 https://pink1016.tistory.com/104
 
+### #29 string를 잘라서 int64로 배열에 저장하기
+https://pink1016.tistory.com/105
+

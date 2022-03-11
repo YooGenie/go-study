@@ -40,3 +40,6 @@ https://pink1016.tistory.com/104
 ### #29 string를 잘라서 int64로 배열에 저장하기
 https://pink1016.tistory.com/105
 
+### #31 맵(map) 공부하기
+https://pink1016.tistory.com/106
+

@@ -1,6 +1,8 @@
 package main
 
-import "github.com/YooGenie/go-study/basic"
+import (
+	"github.com/YooGenie/go-study/function"
+)
 
 func main() {
 	//compare.CompareIfWithSwitch(5)
@@ -21,5 +23,6 @@ func main() {
 	//function.FillZero(12365)
 	//function.Random()
 	//function.SliceStringAndConvertInt()
-	basic.Map()
+	//basic.Map()
+	function.ListAndMap()
 }

@@ -24,5 +24,6 @@ func main() {
 	//function.Random()
 	//function.SliceStringAndConvertInt()
 	//basic.Map()
-	function.ListAndMap()
+	//function.ListAndMap()
+	function.Sort()
 }

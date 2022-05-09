@@ -25,5 +25,5 @@ func main() {
 	//function.SliceStringAndConvertInt()
 	//basic.Map()
 	//function.ListAndMap()
-	function.Sort()
+	function.Join()
 }

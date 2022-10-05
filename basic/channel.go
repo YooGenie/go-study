@@ -21,6 +21,7 @@ func Channel() {
 	fmt.Println(received1)
 	fmt.Println(received2)
 
+	Solution()
 	BlockCaseFull()
 	BlockCaseEmpty()
 }
@@ -46,7 +47,7 @@ func BlockCaseEmpty() {
 	/*
 		1,2,3를 넣고 receive를 4번 하면 어떻게 될까?
 		=> 4번째에서 채널안에 값이 없어서 가져올 수 없는 상황이다.
-		=> 그래서 무한 대기를 타다가 비장성적으로 종료가 된다
+		=> 그래서 무한 대기를 타다가 비정상적으로 종료가 된다
 		=> 아래와 같은 메시지가 뜬다
 		=> fatal error: all goroutines are asleep - deadlock!
 	*/
@@ -62,4 +63,23 @@ func BlockCaseEmpty() {
 	<-ch //채널에 값을 가져올 수 없어서 무한 대기
 
 	fmt.Println("finish")
+}
+
+func Solution() {
+	// close를 해주면 채널에 값이 없는 경우 zero 값을 가져온다.
+	// 채널의 데이터타입이 string이면 "" 빈 문자열을 가져온다.
+	ch := make(chan int, 3)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+	close(ch) //값이 빠져 나가면 0으로 채워준다.
+
+	<-ch
+	<-ch
+	<-ch
+	result := <-ch //0이 빼와서 에러가 나지 않고 종료 된다
+	fmt.Println("result :", result)
+	fmt.Println("finish")
+
+	ch <- 5 // close하면 send 할 수 없다. panic: send on closed channel
 }

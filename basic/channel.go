@@ -21,9 +21,14 @@ func Channel() {
 	fmt.Println(received1)
 	fmt.Println(received2)
 
-	Solution()
-	BlockCaseFull()
-	BlockCaseEmpty()
+	//Solution()
+	//BlockCaseFull()
+	//BlockCaseEmpty()
+
+	//ReceiveMethodOne()
+	//ReceiveMethodTwo()
+	//ReceiveMethodThree()
+	ReceiveMethodFore()
 }
 
 func BlockCaseFull() {
@@ -82,4 +87,76 @@ func Solution() {
 	fmt.Println("finish")
 
 	ch <- 5 // close하면 send 할 수 없다. panic: send on closed channel
+}
+
+// channel 에 있는 값 receive 방법
+
+func ReceiveMethodOne() {
+	ch := make(chan int, 3)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+	close(ch) //만약 close가 없으면 계속 대기하다가 에러가 발생한다. fatal error: all goroutines are asleep - deadlock!
+
+	for v := range ch { //range는 close 될 때까지 값을 가져온다.
+		fmt.Println(v)
+	}
+	// 1,2,3 출력이 되고 끝난다.
+}
+
+func ReceiveMethodTwo() {
+	ch := make(chan int, 3)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+
+	for {
+		select {
+		case receive := <-ch: // 값이 올 때까지 block 된다. 예를 들으면 3초 있다가 값이 들어오면 3초동안 block이 된다.
+			fmt.Println(receive)
+		default:
+			fmt.Println("default") //채널에 값이 없으면 default로 이동을 한다.
+		}
+	}
+	// 채널에 5초 뒤에 값이 들어오면 0,1,2,3,4초까지는 default를 찍고 5초가 되면 case문으로 이동합니다.
+}
+
+func ReceiveMethodThree() {
+	ch := make(chan int, 3)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+	close(ch) // close를 하면 계속 0을 출력 할 것 이다.
+
+	for {
+		select {
+		case receive := <-ch: // close가 있어서 case에서 값을 계속 받는다
+			fmt.Println(receive)
+		default:
+			fmt.Println("default")
+		}
+	}
+
+}
+
+func ReceiveMethodFore() {
+	ch := make(chan int, 3)
+	ch <- 1
+	ch <- 2
+	ch <- 3
+	close(ch)
+
+	for {
+		select {
+		case receive, ok := <-ch: //receive, ok를 가져온다
+			fmt.Println(receive)
+			if !ok { //종료가 되었는지 확인 해야한다.
+				return
+			}
+		default:
+			fmt.Println("default")
+		}
+	}
+	//close가 되어서 0이나 빈문자열이 생긴건지 아니면 실제로 사용자가 0이나 빈문자열을 넣었는지 알 수 없기 때문에
+	// 채널이 종료되었는지 체크하는 것이 필요하다
 }

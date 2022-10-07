@@ -28,13 +28,7 @@ func Channel() {
 	//ReceiveMethodOne()
 	//ReceiveMethodTwo()
 	//ReceiveMethodThree()
-	//ReceiveMethodFore()
-
-	// 생성/소비를 분리
-	// 채널에 값을 send만 할 수 있는 함수안에 값을 보낼 수 있게 한다.
-	send := SendDataToChannel()
-	// 채널에 값을 receive 하는 함수는 받기만 한다.
-	ReceiveDataFromChannel(send)
+	ReceiveMethodFore()
 }
 
 func BlockCaseFull() {
@@ -165,5 +159,4 @@ func ReceiveMethodFore() {
 	}
 	//close가 되어서 0이나 빈문자열이 생긴건지 아니면 실제로 사용자가 0이나 빈문자열을 넣었는지 알 수 없기 때문에
 	// 채널이 종료되었는지 체크하는 것이 필요하다
-
 }

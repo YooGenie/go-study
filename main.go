@@ -25,5 +25,5 @@ func main() {
 	//function.ListAndMap()
 	//function.Join()
 	//basic.Channel()
-	basic.Goroutine()
+	basic.GoroutineSolution()
 }

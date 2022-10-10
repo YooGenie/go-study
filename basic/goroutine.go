@@ -7,13 +7,11 @@ func Goroutine() {
 	go func() {
 		fmt.Println("Goroutine 진행 중")
 	}()
-	go add()
 	fmt.Println("Goroutine 끝")
 
 }
 
-func add() {
+func Add() {
 	sum := 1 + 2
-	fmt.Printf("합계 : %d", sum)
-
+	fmt.Printf("합계 : %d \n", sum)
 }

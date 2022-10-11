@@ -57,7 +57,7 @@ func ListAndMap() {
 	fmt.Println(resultCount)
 
 	//resultList 안에 id에 맞게 resultCount 대입 시킨다.
-	for i, _ := range *resultList {
+	for i := range *resultList {
 		for _, v := range *resultCount {
 			if (*resultList)[i].Id == v["id"] {
 				(*resultList)[i].RegisterOrgCount = v["registerOrgCount"]

@@ -25,6 +25,7 @@ func main() {
 	//function.ListAndMap()
 	//function.Join()
 	//basic.Channel()
-	basic.SolutionOne()
-	basic.SolutionTwo()
+	//basic.SolutionOne()
+	//basic.SolutionTwo()
+	basic.StudyContext()
 }

@@ -27,5 +27,6 @@ func main() {
 	//basic.Channel()
 	//basic.SolutionOne()
 	//basic.SolutionTwo()
-	basic.StudyWithCancel()
+	//basic.StudyWithTimeout()
+	basic.StudyWithDeadline()
 }

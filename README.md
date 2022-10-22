@@ -43,3 +43,11 @@ https://pink1016.tistory.com/105
 ### #31 맵(map) 공부하기
 https://pink1016.tistory.com/106
 
+### #채널
+이슈 : [채널 기본 문법](https://github.com/YooGenie/go-study/issues/40)  <br>
+블로그 : https://pink1016.tistory.com/178 <br>
+<br>
+이슈 : [채널(channel)에서 주의할 점](https://github.com/YooGenie/go-study/issues/42)  <br>
+블로그 : https://pink1016.tistory.com/179 <br>
+<br>
+

@@ -28,5 +28,5 @@ func main() {
 	//basic.SolutionOne()
 	//basic.SolutionTwo()
 	//basic.StudyWithTimeout()
-	basic.StudyWithDeadline()
+	basic.StringToStruct()
 }

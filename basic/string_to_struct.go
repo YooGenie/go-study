@@ -21,12 +21,12 @@ func StringToStruct() {
 }`
 
 	structInfo := Info{}
-	byteContent, _ := json.Marshal(str)
-
-	err := json.Unmarshal(byteContent, &structInfo)
+	err := json.Unmarshal([]byte(str), &structInfo)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("Unmarshal : ", err)
 	}
 
 	fmt.Println(structInfo.Id)
+	fmt.Println(structInfo.NickName)
+	fmt.Println(structInfo.ReservationNo)
 }

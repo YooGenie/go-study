@@ -29,5 +29,6 @@ func main() {
 	//basic.SolutionTwo()
 	//basic.StudyWithTimeout()
 	//basic.StringToStruct()
-	basic.StudyFmt()
+	//basic.StudyFmt()
+	basic.StudyFmtError()
 }

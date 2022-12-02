@@ -65,3 +65,42 @@ func StudyFmt() {
 		fmt.Println("에러 : ", err)
 	}
 }
+
+func StudyFmtError() {
+	var in int
+	_, err := fmt.Scan(&in)
+	if err != nil {
+		fmt.Println("에러 : ", err)
+	}
+	/*
+		에러 메시지
+		1) expected integer : int 인데 string 입력했을 때
+	*/
+
+	var a int
+	var b int
+
+	_, err = fmt.Scanln(&a, &b)
+	if err != nil {
+		fmt.Println("에러 : ", err)
+	}
+
+	/*
+		에러 메시지
+		1) unexpected newline : 2개 입력해야하는데 1개만 입력하고 엔터 쳤을 때
+		예시로 7만 입력하고 엔터 치면 에러
+
+	*/
+
+	var c int
+	var d string
+	_, err = fmt.Scanf("%d/%s", &c, &d)
+	if err != nil {
+		fmt.Println("에러 : ", err)
+	}
+	/*
+		에러 메시지
+		1) input does not match format  : 포맷 맞지 않을 때 1,2을 입력해야했는데 1 2 입력하면 에러
+	*/
+
+}

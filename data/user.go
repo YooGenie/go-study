@@ -1,4 +1,4 @@
-package main
+package data
 
 import (
 	userpb "github.com/beautiful-store/grpc/v0/sunny"

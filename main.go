@@ -1,7 +1,5 @@
 package main
 
-import "github.com/YooGenie/go-study/basic"
-
 func main() {
 	//compare.CompareIfWithSwitch(5)
 	//fmt.Println("")
@@ -30,5 +28,5 @@ func main() {
 	//basic.StudyWithTimeout()
 	//basic.StringToStruct()
 	//basic.StudyFmt()
-	basic.StudyFmtError()
+	//basic.StudyFmtError()
 }

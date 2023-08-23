@@ -1,4 +1,4 @@
-package main
+package designPattern
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestCourierController_GetCouriers(t *testing.T) {
+func TestBasicSingletonPatten(t *testing.T) {
 	t.Run("싱글톤", func(t *testing.T) {
 		s1 := BasicSingletonPatten()
 		s2 := BasicSingletonPatten()

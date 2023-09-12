@@ -43,3 +43,11 @@ func Test_CheckUnderTheAgeOfFourteen(t *testing.T) {
 		assert.Equal(t, false, check)
 	})
 }
+
+func Test_CheckAge(t *testing.T) {
+	t.Run("(성공) 전체조회 - main", func(t *testing.T) {
+		birthDate := "19970717"
+		age := GetAge(birthDate)
+		assert.Equal(t, int64(26), age)
+	})
+}

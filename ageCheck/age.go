@@ -32,3 +32,19 @@ func CheckUnderTheAgeOfFourteen(birthDate string, seventhDigit int64) bool {
 		return false
 	}
 }
+
+func GetAge(birthDate string) int64 {
+	birthMonth, _ := time.Parse("01", birthDate[4:6])
+	birthDay, _ := time.Parse("02", birthDate[7:])
+	birthYear, _ := strconv.Atoi(birthDate[:4])
+
+	now := time.Now()
+	age := now.Year() - birthYear
+
+	// 생일이 지나지 않았을 경우 나이에서 1을 빼줌
+	if now.Month() < birthMonth.Month() || (now.Month() == birthMonth.Month() && now.Day() < birthDay.Day()) {
+		age--
+	}
+
+	return int64(age)
+}

@@ -33,6 +33,7 @@ func CheckUnderTheAgeOfFourteen(birthDate string, seventhDigit int64) bool {
 	}
 }
 
+
 func GetAge(birthDate string) int64 {
 	birthMonth, _ := time.Parse("01", birthDate[4:6])
 	birthDay, _ := time.Parse("02", birthDate[7:])
@@ -48,3 +49,4 @@ func GetAge(birthDate string) int64 {
 
 	return int64(age)
 }
+

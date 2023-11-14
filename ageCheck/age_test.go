@@ -44,6 +44,7 @@ func Test_CheckUnderTheAgeOfFourteen(t *testing.T) {
 	})
 }
 
+
 func Test_CheckAge(t *testing.T) {
 	t.Run("(성공) 전체조회 - main", func(t *testing.T) {
 		birthDate := "19970717"
